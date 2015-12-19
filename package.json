@@ -7,6 +7,23 @@
     "test": "jest"
   },
   "dependencies": {
+    "flux": "^2.1.1",
     "react-native": "^0.14.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^6.0.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "preprocessCachingDisabled": "true",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
   }
 }
