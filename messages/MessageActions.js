@@ -18,4 +18,4 @@ var MessageActions = {
     },
 };
 
-module.exports = MessageAction;
+module.exports = MessageActions;
