@@ -2,12 +2,12 @@
 
 jest.autoMockOff();
 
-describe('application', function() {
+describe('when', function() {
 
 	let MessageActions = require('../../messages/MessageActions');
 	let MessageStore = require('../../messages/MessageStore');
 
-	describe('a create message action is emmited', function() {
+	describe('a message is created', function() {
 
 		it('should not blow up!', function(){
 			MessageActions.create('Hello World!');
@@ -16,7 +16,6 @@ describe('application', function() {
 		it('should add the message to the store', function(){
 			let messages = MessageStore.getAll();
 			expect(Object.keys(messages).length).toBe(1);
-			console.log(messages);
 		})
 
 		describe('with an empty text', function(){
