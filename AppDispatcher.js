@@ -10,11 +10,10 @@ var AppDispatcher = new Dispatcher();
  * @param  {object} action The data coming from the view.
  */
 AppDispatcher.handleViewAction = function(action) {
-  this.dispatch({
-    action,
-    source: 'VIEW_ACTION',
-  });
-}
-
+    this.dispatch({
+        action,
+        source: 'VIEW_ACTION',
+    });
+};
 
 module.exports = AppDispatcher;

@@ -1,3 +1,3 @@
 module.exports = function(name) {
-	return 'Hello world ' + name + '!';
-}
+    return 'Hello world ' + name + '!';
+};
