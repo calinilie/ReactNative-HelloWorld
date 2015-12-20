@@ -1,0 +1,1 @@
+jscs ./ --config=./.jscsrc --fix
