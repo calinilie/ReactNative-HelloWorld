@@ -1,6 +1,10 @@
 'use strict';
 
-var React = require('react-native');
+const React = require('react-native');
+const{
+  StyleSheet,
+  View,
+}  = React;
 
 var WelcomeComponent = React.createClass({
 
@@ -12,19 +16,28 @@ var WelcomeComponent = React.createClass({
 
     render: function() {
         return (
-          <View style={styles.container}>
-            <Text style={styles.welcome}>
-              Welcome to React Native!
-            </Text>
-            <Text style={styles.instructions}>
-              To get started, edit index.ios.js
-            </Text>
-            <Text style={styles.instructions}>
-              Press Cmd+R to reload,              {'\n'}
-              Cmd+D or shake for dev menu
-            </Text>
-          </View>
+          <View> Hello World! </View>
         );
+    },
+});
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'orange',
+    },
+    welcome: {
+        color: 'white',
+        fontSize: 30,
+        textAlign: 'center',
+        margin: 10,
+    },
+    instructions: {
+        color: 'white',
+        textAlign: 'center',
+        marginBottom: 5,
     },
 });
 
