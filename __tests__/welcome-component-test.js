@@ -1,10 +1,9 @@
 'use strict';
 
 const React = require('react-native');
-const { Text, View, TouchableWithoutFeedback } = React;
 
-const shallowHelpers = require('react-addons-test-utils');
-const shallowRenderer = shallowHelpers.createRenderer();
+const ReactTestUtils = require('react-addons-test-utils');
+const shallowRenderer = ReactTestUtils.createRenderer();
 
 let WelcomeComponent = require('../welcome-component');
 
