@@ -11,6 +11,7 @@ describe('testing welcome component', function() {
 
     it('should not blow up!', function() {
         shallowRenderer.render(<WelcomeComponent/>);
-        console.log('>> ' + shallowRenderer.getRenderOutput());
+        let output = shallowRenderer.getRenderOutput();
+        expect(output.props.children).toBe('Hello World!');
     });
 });

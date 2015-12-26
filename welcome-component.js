@@ -16,7 +16,7 @@ var WelcomeComponent = React.createClass({
 
     render: function() {
         return (
-          <View> Hello World! </View>
+          <View>Hello World!</View>
         );
     },
 });
