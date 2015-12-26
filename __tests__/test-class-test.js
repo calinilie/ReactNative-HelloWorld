@@ -11,5 +11,4 @@ describe('test test', function() {
     it('should return the correct result', function() {
         expect(underTest('Calin')).toBe('Hello world Calin!');
     });
-
 });

@@ -4,26 +4,36 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "flux": "^2.1.1",
     "react-native": "^0.14.2"
   },
   "devDependencies": {
-    "babel-jest": "^6.0.1"
+    "babel-jest": "^6.0.1",
+    "jest-cli": "^0.8.2",
+    "react": "^0.14.3",
+    "react-addons-test-utils": "^0.14.3",
+    "react-shallow-renderer-helpers": "^2.0.2"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "setupEnvScriptFile": "<rootDir>/node_modules/react-native/jestSupport/env.js",
     "testFileExtensions": [
       "es6",
       "js"
     ],
-    "preprocessCachingDisabled": "true",
     "moduleFileExtensions": [
       "js",
       "json",
       "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
     ]
   }
 }
