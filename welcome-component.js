@@ -2,7 +2,7 @@
 
 var React = require('react-native');
 
-var AwesomeProject = React.createClass({
+var WelcomeComponent = React.createClass({
 
     getInitialState: function() {
         return {
@@ -28,4 +28,4 @@ var AwesomeProject = React.createClass({
     },
 });
 
-module.exports = AwesomeProject;
+module.exports = WelcomeComponent;
