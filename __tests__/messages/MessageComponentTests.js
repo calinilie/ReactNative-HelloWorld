@@ -17,7 +17,6 @@ describe('Message component', function() {
 
         it('should have children', () => {
             let output = shallowRenderer.getRenderOutput();
-            console.log(output.props.children);
             expect(output.props.children).not.toBeUndefined();
         });
     });

@@ -27,6 +27,8 @@ class View extends React.Component {
 }
 class PixelRatio extends React.Component {
     static get() { return 1; }
+
+    static getPixelSizeForLayoutSize(input) { return input; }
 }
 /**
  * ## Stubs
