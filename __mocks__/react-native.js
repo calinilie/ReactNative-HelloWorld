@@ -36,6 +36,7 @@ class PixelRatio extends React.Component {
 ReactNative.View = View;
 ReactNative.ScrollView = View;
 ReactNative.Text = View;
+ReactNative.TouchableHighlight = View;
 ReactNative.TouchableOpacity = View;
 ReactNative.TouchableWithoutFeedback = View;
 ReactNative.ToolbarAndroid = View;
