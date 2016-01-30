@@ -14,6 +14,7 @@ const {
   TouchableHighlight,
 } = React;
 const Message = require('./messages/MessageComponent');
+const MessageList = require('./messages/MessageListComponent');
 
 var AwesomeProject = React.createClass({
 
@@ -24,14 +25,9 @@ var AwesomeProject = React.createClass({
     },
 
     render: function() {
-
         return (
-            <View style={{marginTop:24}}>
-                <Message/>
-                <Message/>
-                <Message/>
-                <Message/>
-                <Message/>
+            <View style={styles.container}>
+               <MessageList/>
             </View>
         );
     },
@@ -40,9 +36,8 @@ var AwesomeProject = React.createClass({
 var styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: 'orange',
+        paddingTop: 24,
     },
     welcome: {
         color: 'white',
